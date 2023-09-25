@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" modified="2023-09-11T19:56:22.468Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="NOpQfF8Y0JdsZhQmcsNY" version="21.7.4" type="device">
+  <diagram name="Página-1" id="rygOcp51uNGpvVKiaaSN">
+    <mxGraphModel dx="819" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cYmLiPTaZeFv8BepmD23-5" value="produto" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="70" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cYmLiPTaZeFv8BepmD23-6" value="id_produto&lt;br&gt;+ nome : string&lt;br&gt;+ valor : decimal&lt;br&gt;+ descricao : string&lt;br&gt;+ imagem : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cYmLiPTaZeFv8BepmD23-5" vertex="1">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="cYmLiPTaZeFv8BepmD23-9" value="cliente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="70" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cYmLiPTaZeFv8BepmD23-10" value="id_cliente&lt;br&gt;+ nome : string&lt;br&gt;+ endereco : string&lt;br&gt;+ contato : string&lt;br&gt;+ email : string&lt;br&gt;+ senha: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cYmLiPTaZeFv8BepmD23-9" vertex="1">
+          <mxGeometry y="26" width="160" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="cYmLiPTaZeFv8BepmD23-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="cYmLiPTaZeFv8BepmD23-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cYmLiPTaZeFv8BepmD23-13" value="categoria" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="70" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="Xx33MQOE8wj80ZVSViYW-1" value="+ agua : string&lt;br&gt;acai : string&lt;br&gt;+ guarana: string&lt;br&gt;+ cod : int&lt;br&gt;+ descricao:string" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="cYmLiPTaZeFv8BepmD23-13">
+          <mxGeometry y="26" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cYmLiPTaZeFv8BepmD23-17" value="pedido" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="70" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cYmLiPTaZeFv8BepmD23-18" value="id_pedido&lt;br&gt;+&amp;nbsp; cep : int&lt;br&gt;+ formaPagamento : string&lt;br&gt;+ observacao : string&lt;br&gt;+data : DateTime&lt;br&gt;+ hora : string&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="cYmLiPTaZeFv8BepmD23-17" vertex="1">
+          <mxGeometry y="26" width="160" height="104" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
