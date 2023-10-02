@@ -1,0 +1,55 @@
+@model IEnumerable<_18_CRUD_BD.Models.Jogo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center color-primary">Index</h1>
+<div class="d-grid justify-content-center">
+    <p>
+        <a asp-action="Create" class="btn btn-info"> Criar Novo</a>
+    </p>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descrição)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imagem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ativo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descrição)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Imagem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ativo)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.JogoId" class="btn btn-outline-info">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.JogoId" class="btn btn-outline-info">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.JogoId" class="btn btn-outline-info">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -3,8 +3,8 @@ using _18_CRUD_BD.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-   options.UseSqlite(builder.Configuration.GetConnectionString("CaminhoBD")));
+builder.Services.AddDbContext<AppDbContext>(options => 
+    options.UseSqlite(builder.Configuration.GetConnectionString("CaminhoBD")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
